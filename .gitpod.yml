@@ -1,0 +1,12 @@
+tasks:
+  - init: |
+      echo 'TODO: build project'
+    command: |
+      export apiadd="https://8080-${GITPOD_WORKSPACE_URL##https://}" && docker-compose up
+ports:
+  - port: 9090
+    visibility: public
+  - port: 8080
+    visibility: public
+
+

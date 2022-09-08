@@ -1,0 +1,55 @@
+[
+      {
+        "uri": "/api/meangaslow",
+        "method": "GET",
+        "handler": "meangaslow^myRestAPIs"
+      },
+      {
+        "uri": "/api/mediangaslow",
+        "method": "GET",
+        "handler": "mediangaslow^myRestAPIs"
+      },
+      {
+        "uri": "/api/meaneleclow",
+        "method": "GET",
+        "handler": "meaneleclow^myRestAPIs"
+      },
+      {
+        "uri": "/api/meangashigh",
+        "method": "GET",
+        "handler": "meangashigh^myRestAPIs"
+      },
+      {
+        "uri": "/api/mediangashigh",
+        "method": "GET",
+        "handler": "mediangashigh^myRestAPIs"
+      },
+      {
+        "uri": "/api/meanelechigh",
+        "method": "GET",
+        "handler": "meanelechigh^myRestAPIs"
+      },
+      {
+        "uri": "/api/conelechigh",
+        "method": "GET",
+        "handler": "conelechigh^myRestAPIs"
+      },
+      {
+        "uri": "/api/coneleclow",
+        "method": "GET",
+        "handler": "coneleclow^myRestAPIs"
+      },
+      {
+        "uri": "/api/congashigh",
+        "method": "GET",
+        "handler": "congashigh^myRestAPIs"
+      },
+      {
+        "uri": "/api/congaslow",
+        "method": "GET",
+        "handler": "congaslow^myRestAPIs"
+      },
+
+
+
+]

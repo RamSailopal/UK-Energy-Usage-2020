@@ -1,0 +1,37 @@
+START
+ S FIL="/home/yotta/Postcode_level_all_meters_electricity_2020_1.csv"
+ O FIL:(read)
+ U FIL F  Q:$ZEOF=1  D
+ . R LIN
+ . S PCODE=$P(LIN,",",1)
+ . Q:PCODE="POSTCODE"!(PCODE="")
+ . S MET=$P(LIN,",",2)
+ . S CON=$P(LIN,",",3)
+ . S MEAN=$P(LIN,",",4)
+ . S MEDIAN=$P(LIN,",",5)
+ . I MED'="" S ^ELECTRIC(PCODE)=MET_","_CON_","_MEAN_","_MEDIAN
+ QUIT
+MEAN
+ S PCODE=""
+ F  S PCODE=$O(^ELECTRIC(PCODE)) Q:PCODE=""  D
+ . S LIN=^ELECTRIC(PCODE)
+ . S MEAN=$P(LIN,",",3)
+ . I MEAN'="" S ^ELECMEAN(MEAN,PCODE)=LIN
+ . Q
+ QUIT
+MED
+ S PCODE=""
+ F  S PCODE=$O(^ELECTRIC(PCODE)) Q:PCODE=""  D
+ . S LIN=^ELECTRIC(PCODE)
+ . S MEDIAN=$P(LIN,",",4)
+ . I MEDIAN'="" S ^ELECMEDIAN(MEDIAN,PCODE)=LIN
+ . Q
+ QUIT
+CON
+ S PCODE=""
+ F  S PCODE=$O(^ELECTRIC(PCODE)) Q:PCODE=""  D
+ . S LIN=^ELECTRIC(PCODE)
+ . S MEDIAN=$P(LIN,",",2)
+ . I MEDIAN'="" S ^ELECCON(MEDIAN,PCODE)=LIN
+ . Q
+
