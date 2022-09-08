@@ -4,7 +4,7 @@ import './index.css';
 import axios from 'axios';
 import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
-const Highcongas = () => {
+const Highconelec = () => {
 const position=[51.505, -0.09]
 
         ReactDOM.render(
@@ -64,7 +64,7 @@ const API_ROUTE = jsonstr().then((data)=> {
                                                                    data.map((marker) => (
 
                             <Marker position={[marker.long,marker.lat]}>
-                              <Popup>
+                            <Popup>
                                                                            {marker.pcode + " - " + marker.city + " - " + marker.con + " - kWh" }
                               </Popup>
                             </Marker>
@@ -76,5 +76,5 @@ const API_ROUTE = jsonstr().then((data)=> {
 
 });
 };
-export default Highcongas;
+export default Highconelec;
 

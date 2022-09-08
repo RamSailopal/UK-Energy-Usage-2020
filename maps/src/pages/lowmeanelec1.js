@@ -4,7 +4,7 @@ import './index.css';
 import axios from 'axios';
 import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
-const Lowmeangas = () => {
+const Lowmeanelec = () => {
 const position=[51.505, -0.09]
 
         ReactDOM.render(
@@ -77,5 +77,5 @@ const API_ROUTE = jsonstr().then((data)=> {
 });
 };
 
-export default Lowmeangas;
+export default Lowmeanelec;
 
