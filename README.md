@@ -28,7 +28,7 @@ Mean/Median/Consumed gas and electric for individual post codes (where data is a
 
 https://github.com/robtweed/mgweb-server
 
-http://yottadb.com
+https://yottadb.com
 
 https://reactjs.org/
 
