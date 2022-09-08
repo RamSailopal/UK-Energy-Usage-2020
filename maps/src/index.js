@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Test from "./pages/test";
-import Page1 from "./pages/page1";
 import Lowmeangas from "./pages/lowmeangas1.js";
 import Highcongas from "./pages/highcongas1.js";
 import Highmeangas from "./pages/highmeangas1.js";

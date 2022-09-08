@@ -9,7 +9,7 @@ START
  . S CON=$P(LIN,",",3)
  . S MEAN=$P(LIN,",",4)
  . S MEDIAN=$P(LIN,",",5)
- . I MED'="" S ^ELECTRIC(PCODE)=MET_","_CON_","_MEAN_","_MEDIAN
+ . I MEDIAN'="" S ^ELECTRIC(PCODE)=MET_","_CON_","_MEAN_","_MEDIAN
  QUIT
 MEAN
  S PCODE=""
