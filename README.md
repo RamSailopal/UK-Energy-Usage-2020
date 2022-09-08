@@ -2,6 +2,8 @@
 
 Visualisation of UK energy consumption by post code using Reactjs and YottaDB
 
+![Alt text](UKenergy.JPG?raw=true "view")
+
 # Gitpod
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/RamSailopal/UK-Energy-Usage-2020)
