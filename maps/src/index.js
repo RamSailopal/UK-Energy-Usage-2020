@@ -7,6 +7,13 @@ import Highmeangas from "./pages/highmeangas1.js";
 import Highmediangas from "./pages/highmediangas1.js";
 import Lowcongas from "./pages/lowcongas1.js";
 import Lowmediangas from "./pages/lowmediangas1.js";
+import Lowmeanelec from "./pages/lowmeanelec1.js";
+import Highconelec from "./pages/highconelec1.js";
+import Highmeanelec from "./pages/highmeanelec1.js";
+import Highmedianelec from "./pages/highmedianelec1.js";
+import Lowconelec from "./pages/lowconelec1.js";
+import Lowmedianelec from "./pages/lowmedianelec1.js";
+import Pcode from "./pages/pcode.js";
 import NoPage from "./pages/nopage";
 import './index.css';
 import axios from 'axios';
@@ -24,6 +31,13 @@ export default function App() {
           <Route path="highmeangas" element={<Highmeangas />} />
           <Route path="highmedgas" element={<Highmediangas />} />
           <Route path="lowmedgas" element={<Lowmediangas />} />
+          <Route path="lowmeanelec" element={<Lowmeanelec />} />
+          <Route path="lowconelec" element={<Lowconelec />} />
+          <Route path="highconelec" element={<Highconelec />} />
+          <Route path="highmeanelec" element={<Highmeanelec />} />
+          <Route path="highmedelec" element={<Highmedianelec />} />
+          <Route path="lowmedelec" element={<Lowmedianelec />} />
+          <Route path="pcode/:id" element={<Pcode />} />
           <Route path="*" element={<NoPage />} />
       </Routes>
     </BrowserRouter>

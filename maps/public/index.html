@@ -36,8 +36,8 @@
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="top" style="background-color: #669999;">
     <table>
-    <tr><th>Gas</th><td><a href="lowmedgas">10 Lowest Median</a></td><td><a href="lowmeangas">10 Lowest Mean</a></td><td><a href="lowcongas">10 Lowest Consumption</a></td><td><a href="highmedgas">10 Highest Median</a></td><td><a href="highmeangas">10 Highest Mean</a></td><td><a href="highcongas">10 Highest Consumption</a></td><th>Find a Post Code</th></tr>
-    <tr><th>Electricity</th><td><a href="lowmedelec">10 Lowest Median</a></td><td><a href="lowmeanelec">10 Lowest Mean</a></td><td><a href="lowconelec">10 Lowest Consumption</a></td><td><a href="highmedelec">10 Highest Median</a></td><td><a href="highmeanelec">10 Highest Mean</a></td><td><a href="highconelec">10 Highest Consumption</a></td><td><form name="pcodesub" action="/nopage" method="post"><label for="pcode">Post Code:</label><input type="text" id="pcode" name="pcode"><input type="submit" value="Submit"></form></td></tr>
+    <tr><th>Gas</th><td><a href="/lowmedgas">10 Lowest Median</a></td><td><a href="/lowmeangas">10 Lowest Mean</a></td><td><a href="/lowcongas">10 Lowest Consumption</a></td><td><a href="/highmedgas">10 Highest Median</a></td><td><a href="/highmeangas">10 Highest Mean</a></td><td><a href="/highcongas">10 Highest Consumption</a></td><th>Find a Post Code</th></tr>
+    <tr><th>Electricity</th><td><a href="lowmedelec">10 Lowest Median</a></td><td><a href="lowmeanelec">10 Lowest Mean</a></td><td><a href="lowconelec">10 Lowest Consumption</a></td><td><a href="highmedelec">10 Highest Median</a></td><td><a href="highmeanelec">10 Highest Mean</a></td><td><a href="highconelec">10 Highest Consumption</a></td><td><label for="pcode">Post Code:</label><input type="text" id="pcode" name="pcode"><input type="submit" value="Submit" onClick="location.href='/pcode/' + document.getElementById('pcode').value"></td></tr>
     </table>
     </div>
     <div id="head1" style="background-color: #0066ff;"></div>
