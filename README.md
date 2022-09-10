@@ -8,6 +8,10 @@ Visualisation of UK energy consumption by post code using Reactjs and YottaDB
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/RamSailopal/UK-Energy-Usage-2020)
 
+Once deployed, view the statistics by navigating to:
+
+https://9983-gitpodaddress
+
 # Statistics Available
 
 Top 10 Mean gas usage (kwH)
