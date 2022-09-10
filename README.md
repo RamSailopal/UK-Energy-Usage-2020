@@ -1,4 +1,4 @@
-9# UK-Energy-Usage-2020
+# UK-Energy-Usage-2020
 
 Visualisation of UK energy consumption by post code using Reactjs and YottaDB
 
